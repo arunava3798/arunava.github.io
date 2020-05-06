@@ -341,7 +341,13 @@ h1, h2, h3, h4, h5, h6 {
 #hero .hero-logo {
   margin-bottom: 30px;
 }
-
+.rotate45 {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
 #hero h1 {
   margin: 0 0 30px 0;
   font-size: 48px;
