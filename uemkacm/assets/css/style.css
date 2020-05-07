@@ -390,11 +390,16 @@ h1, h2, h3, h4, h5, h6 {
   #hero {
     background-attachment: fixed;
   }
+  .short-text { display: none; }
 }
 
 @media (max-width: 768px) {
   #hero{
     background: url("../img/Background2.jpg");
+  }
+  #hero .hero-container{
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 1;
   }
   #hero h1 {
     font-size: 28px;
@@ -403,6 +408,8 @@ h1, h2, h3, h4, h5, h6 {
   #hero h2 {
     line-height: 22px;
   }
+  .short-text { display: inline-block; }
+  .full-text { display: none; }
 }
 
 /*--------------------------------------------------------------
