@@ -1,4 +1,23 @@
 <?php
+	if(isset($_POST['submit'])){
+		$name=$_POST['name'];
+		$email=$_POST['email'];
+		$phone=$_POST['phone'];
+		$msg=$_POST['msg'];
+
+		$to='xyz.123@mail.com'; // Receiver Email ID, Replace with your email ID
+		$subject='Form Submission';
+		$message="Name :".$name."\n"."Phone :".$phone."\n"."Wrote the following :"."\n\n".$msg;
+		$headers="From: ".$email;
+
+		if(mail($to, $subject, $message, $headers)){
+			echo "<h1>Sent Successfully! Thank you"." ".$name.", We will contact you shortly!</h1>";
+		}
+		else{
+			echo "Something went wrong!";
+		}
+	}
+
   /**
   * Requires the "PHP Email Form" library
   * The "PHP Email Form" library is available only in the pro version of the template
@@ -7,7 +26,7 @@
   */
 
   // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'acm.uemk@gmail.com';
+  /*$receiving_email_address = 'acm.uemk@gmail.com';
 
   if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
     include( $php_email_form );
@@ -33,9 +52,14 @@
   );
   */
 
-  $contact->add_message( $_POST['name'], 'From');
+  /*$contact->add_message( $_POST['name'], 'From');
   $contact->add_message( $_POST['email'], 'Email');
   $contact->add_message( $_POST['message'], 'Message', 10);
 
   echo $contact->send();
 ?>
+
+
+
+
+
