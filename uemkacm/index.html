@@ -66,7 +66,12 @@
 
           <li class="nav-logo"><a href="index.html"><img src="assets/img/uemk_acm_logo.ico" alt="" class="img-fluid"></a></li>
 
-          <li><a href="#portfolio">Gallery</a></li>
+          <li class="drop-down"><a href="">Portfolio</a>
+            <ul>
+              <li><a href="#blogs">Blogs</a></li>
+              <li><a href="#portfolio">Gallery</a></li>
+            </ul>
+          </li>
           <li><a href="#pricing">Events</a></li>
           <li><a href="#contact">Contact</a></li>
 
@@ -88,11 +93,7 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-6" data-aos="fade-right">
-            <div class="image">
-              <img src="assets/img/about.jpeg" class="img-fluid" alt="">
-            </div>
-          </div>
+          
           <div class="col-lg-6" data-aos="fade-left">
             <div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
               <h3>ACM is the world's largest educational and scientific computing society.</h3>
@@ -106,6 +107,11 @@
               <p>
                 The chapter organizes a number of events including programming contests, talks by renowned speakers, workshops etc.which give the students an exposure to the competitive computing world as well as allow them to understand the advancements going on in the computing sphere worldwide.
               </p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="image">
+              <img src="assets/img/about.jpeg" class="img-fluid" alt="">
             </div>
           </div>
         </div>
@@ -206,7 +212,45 @@
 
       </div>
     </section><!-- End Services Section -->
+    
 
+    <!--Blog Section-->
+    <section id="blogs" class="blogs">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Blogs</h2>
+          <p>Learn more about our student chapter</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="image">
+              <img src="assets/img/blogs.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
+              <h3>ACM UEMK Chapter has launched a blog series for continuous sharing of ideas and opinions.</h3>
+              <p class="font-italic">
+                The main focus is to : 
+              </p>
+              <ul>
+                <li><i class="bx bx-check-double"></i>Provide a platform for theoreticians and practitioners to share their ideas and opinions. </li>
+                <li><i class="bx bx-check-double"></i>Encourage discussions and comments.</li>
+                <li><i class="bx bx-check-double"></i>Provide opportunities for networking and growth of the community in respective technology areas</li>
+              </ul>
+            </div>
+          </div>
+          </div>
+          <br>
+         <div class="btn-wrap">
+          <a href="http://uemkacm.blogspot.com/" class="btn-buy">Our Blogs</a>
+        </div>
+        </div>
+     </section>
+    <!--End of Blog Section-->
 
     <!-- =======Portfolio/Gallery Section ======= -->
     <section id="portfolio" class="portfolio">
@@ -377,6 +421,78 @@
       </div>
     </section><!-- End Testimonials Section -->
 
+    <!-- ======= Events/Pricing Section ======= -->
+    <section id="pricing" class="pricing section-bg">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Events</h2>
+          <p>Some of the major events hosted by our ACM Student Chapter</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="box recommended" data-aos="zoom-in" data-aos-delay="100">
+              <span class="recommended-badge">ACTIVE EVENT</span>
+              <br>
+              <h2>MLH Local Hackday</h2>
+              <ul>
+                <li>Learn</li>
+                <li>Build</li>
+                <li>Share</li>
+                <p>One day Hackathon event generally held in between October to December.</p>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Register Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+            <div class="box recommended" data-aos="zoom-in">
+              <!--<span class="recommended-badge">ACTIVE EVENT</span>-->
+              <br>
+              <h2>Distinguish Speaker Program</h2>
+              <br>
+              <ul>
+                <li>Listen and</li>
+                <li>Acquire Knowledge</li>
+                <br>
+                <p>Emminent speakers from Acm delivers sessions on various topics.</p>
+                <h3>Coming Soon!!</h3>
+              </ul>
+              <!--<div class="btn-wrap">
+                <a href="#" class="btn-buy">Register Now</a>
+              </div>-->
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+            <div class="box recommended" data-aos="zoom-in" data-aos-delay="100">
+              <!--<span class="recommended-badge">ACTIVE EVENT</span>-->
+              <br>
+              <h2>Workshops</h2>
+              <br>
+              <ul>
+                <li>Learn</li>
+                <li>Innovate</li>
+                <li>Design</li>
+                <br>
+                <p>Place to learn new technologies, sharpen your skills and develop something new.</p>
+                <h3>Coming Soon!!</h3>
+              </ul>
+              <!--<div class="btn-wrap">
+                <a href="#" class="btn-buy">Register Now</a>
+              </div>-->
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Pricing Section -->
+
 
     <!-- ======= Team Section ======= -->
     <section id="team" class="team">
@@ -468,78 +584,6 @@
 
       </div>
     </section><!-- End Team Section -->
-
-    <!-- ======= Events/Pricing Section ======= -->
-    <section id="pricing" class="pricing section-bg">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Events</h2>
-          <p>Some of the major events hosted by our ACM Student Chapter</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6">
-            <div class="box recommended" data-aos="zoom-in" data-aos-delay="100">
-              <span class="recommended-badge">ACTIVE EVENT</span>
-              <br>
-              <h2>MLH Local Hackday</h2>
-              <ul>
-                <li>Learn</li>
-                <li>Build</li>
-                <li>Share</li>
-                <p>One day Hackathon event generally held in between October to December.</p>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Register Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
-            <div class="box recommended" data-aos="zoom-in">
-              <!--<span class="recommended-badge">ACTIVE EVENT</span>-->
-              <br>
-              <h2>Distinguish Speaker Program</h2>
-              <br>
-              <ul>
-                <li>Listen and</li>
-                <li>Acquire Knowledge</li>
-                <br>
-                <p>Emminent speakers from Acm delivers sessions on various topics.</p>
-                <h3>Coming Soon!!</h3>
-              </ul>
-              <!--<div class="btn-wrap">
-                <a href="#" class="btn-buy">Register Now</a>
-              </div>-->
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
-            <div class="box recommended" data-aos="zoom-in" data-aos-delay="100">
-              <!--<span class="recommended-badge">ACTIVE EVENT</span>-->
-              <br>
-              <h2>Workshops</h2>
-              <br>
-              <ul>
-                <li>Learn</li>
-                <li>Innovate</li>
-                <li>Design</li>
-                <br>
-                <p>Place to learn new technologies, sharpen your skills and develop something new.</p>
-                <h3>Coming Soon!!</h3>
-              </ul>
-              <!--<div class="btn-wrap">
-                <a href="#" class="btn-buy">Register Now</a>
-              </div>-->
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Pricing Section -->
 
 
     <!-- ======= Contact Section ======= -->
