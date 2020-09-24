@@ -344,7 +344,7 @@
                     infinigall = obj.data('infinigall');
                     share = obj.data('share');
                     blockshare.html('');
-                    if ( obj.data('vbtype') !== 'iframe' && obj.data('vbtype') !== 'inline' && obj.data('vbtype') !== 'ajax' ) {
+                  if ( obj.data('vbtype') !== 'iframe' && obj.data('vbtype') !== 'inline' && obj.data('vbtype') !== 'ajax' ) {
                         sharelinks = { 
                             pinterest : '<a target="_blank" href="https://pinterest.com/pin/create/button/?url='+obj.prop('href')+'&media='+obj.prop('href')+'&description='+title+'">'+pinIcon+'</a>', 
                             facebook  : '<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u='+obj.prop('href')+'">'+fbIcon+'</a>', 
@@ -352,6 +352,7 @@
                             linkedin  : '<a target="_blank" href="https://www.linkedin.com/sharing/share-offsite/?url='+obj.prop('href')+'">'+linkedinIcon+'</a>',
                             download  : '<a target="_blank" href="'+obj.prop('href')+'">'+downloadIcon+'</a>'
                         };
+                        
                         $.each( share, function( key, value ) {
                             blockshare.append(sharelinks[value]);
                         });
@@ -466,7 +467,7 @@
 
                         if (destination.data('vbtype') == 'iframe') {
                             loadIframe();
-                        } else if (destination.data('vbtype') == 'inline') {
+                        }if (destination.data('vbtype') == 'inline') {
                             loadInline();
                         } else if (destination.data('vbtype') == 'ajax') {
                             loadAjax();
